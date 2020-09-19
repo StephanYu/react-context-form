@@ -1,4 +1,4 @@
-const formFields = {
+export const formFields = {
   english: {
     signIn: "Sign In",
     email: "Email Address",
@@ -19,4 +19,17 @@ const formFields = {
   },
 };
 
-export default formFields;
+export const navbarContent = {
+  english: {
+    search: "Search",
+    flag: "🇬🇧",
+  },
+  french: {
+    search: "Chercher",
+    flag: "🇫🇷",
+  },
+  spanish: {
+    search: "Buscar",
+    flag: "🇪🇸",
+  },
+};

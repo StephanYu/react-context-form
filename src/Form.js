@@ -14,7 +14,7 @@ import Select from "@material-ui/core/Select";
 import withStyles from "@material-ui/core/styles/withStyles";
 import styles from "./styles/FormStyles";
 import { LanguageContext } from "./contexts/LanguageContext";
-import formFields from "./FormHelper.js";
+import { formFields } from "./LanguageHelper.js";
 
 class Form extends Component {
   static contextType = LanguageContext;
