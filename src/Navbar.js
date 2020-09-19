@@ -15,7 +15,7 @@ import { navbarContent } from "./LanguageHelper";
 function Navbar(props) {
   const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
-  const { classes } = this.props;
+  const { classes } = props;
   const { search, flag } = navbarContent[language];
 
   return (

@@ -17,8 +17,8 @@ import { LanguageContext } from "./contexts/LanguageContext";
 import { formFields } from "./LanguageHelper.js";
 
 function Form(props) {
-  const { language, setLanguage } = useContext(LanguageContext);
-  const { classes } = this.props;
+  const { language, changeLanguage } = useContext(LanguageContext);
+  const { classes } = props;
   const { signIn, email, password, rememberMe } = formFields[language];
 
   return (
@@ -28,7 +28,7 @@ function Form(props) {
           <LockOutlinedIcon />
         </Avatar>
         <Typography variant="h5">{signIn}</Typography>
-        <Select value={language} onChange={setLanguage}>
+        <Select value={language} onChange={changeLanguage}>
           <MenuItem value="english">English</MenuItem>
           <MenuItem value="french">French</MenuItem>
           <MenuItem value="spanish">Spanish</MenuItem>
