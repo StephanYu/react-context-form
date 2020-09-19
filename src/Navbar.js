@@ -13,14 +13,14 @@ import { LanguageContext } from "./contexts/LanguageContext";
 import { navbarContent } from "./LanguageHelper";
 
 function Navbar(props) {
-  const { isDarkTheme, toggleTheme } = useContext(ThemeContext);
+  const { theme, toggleTheme } = useContext(ThemeContext);
   const { language } = useContext(LanguageContext);
   const { classes } = props;
   const { search, flag } = navbarContent[language];
 
   return (
     <div className={classes.root}>
-      <AppBar position="static" color={isDarkTheme ? "primary" : "default"}>
+      <AppBar position="static" color={theme ? "primary" : "default"}>
         <Toolbar>
           <IconButton className={classes.menuButton} color="inherit">
             <span>{flag}</span>
