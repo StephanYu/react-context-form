@@ -15,8 +15,8 @@ class Navbar extends Component {
 
   render() {
     const { isDarkTheme, toggleTheme } = this.context;
-
     const { classes } = this.props;
+
     return (
       <div className={classes.root}>
         <AppBar position="static" color={isDarkTheme ? "primary" : "default"}>
